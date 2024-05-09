@@ -8,8 +8,11 @@ Mindspore代码实现
 #### 模型架构
 整个模型按照论文中叙述分为四个部分：
 1）**Bi-LSTM Layer**，由于mindspore没有elmo相关库，这里省略了LSTM的操作
+
 2）**Argument Feature Capsule Layer**，采用胶囊网络的方法融合论元特征
+
 3）**Discourse Relation-aware Interaction Layer**，论元之间采用注意力机制
+
 4）**Relation Classifier** 对论文的篇章关系进行预测
 
 整体模型架构图如下：
